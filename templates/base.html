@@ -1,0 +1,39 @@
+<!-- templates/base.html-->
+
+<! DOCTYPE html>
+
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Vollkorn:wght@400;600&display=swap" rel="stylesheet"> 
+    </head>
+    <style>
+    body{
+        padding: 5rem;
+        background-color: rgba(14, 27, 11, 0.479);
+    }
+    h1{
+        color: rgb(251, 248, 248);
+        font-size: 2.5rem;
+        font-family: 'Vollkorn', serif;
+        text-align: center;
+        border-bottom: 1px solid black;
+    }
+    h2{
+        font-size: 1.9rem;
+        color: rgb(233, 217, 217);
+
+    }
+    li{
+        font-family: 'Caveat', cursive;
+        font-size: 1.5rem;
+        color: white;
+        padding: 1rem;
+        
+    }
+    </style>
+
+<body>
+    {% block content %}
+    {% endblock content %}
+</body>
+</html>

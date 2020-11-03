@@ -1,8 +1,14 @@
 <!-- templates/home.html-->
+{% extends 'base.html' %}
+{% block content %}
+<body>
+    <h1>Message Board Home Page</h1>
+    <h2>Posts:</h2>
+    <ul>
+        {% for post in all_posts_list %}
+        <li>{{ post.text }}</li>
+        {% endfor %}
+    </ul>
 
-<h1>Message board app homepage</h1>
-<ul>
-    {% for post in all_posts_list %}
-    <li>{{ post.text }}</li>
-    {% endfor %}
-</ul>
+</body>
+{% endblock content %}
